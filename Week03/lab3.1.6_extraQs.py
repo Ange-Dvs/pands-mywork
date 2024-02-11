@@ -9,10 +9,14 @@
 # without defining what the value entered should be.
 
 # Alternative approach could be
-
 number = 99 
-print = ("I have eaten {} burritos.".format (number))
-
+print("I have eaten {} burritos.".format (number))
 
 #7. Why is eggs a valid variable name while 100 is invalid?
+# A: variables must start with a letter and can't begin with a number. 
+# you could have eggs100, eggs_100, onehundred_eggs but the variable can't begin with a number.
+
 #8. What three functions can be used to get the integer, floating-point number, or string version of a value?
+# integer = int(value)
+# floating point number = float(value)
+# String = str(value)
