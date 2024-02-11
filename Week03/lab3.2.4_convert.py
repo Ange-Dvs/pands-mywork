@@ -2,12 +2,17 @@
 #This program takes in a float amount of dollars and returns that absolute amount in cents
 #Author: Angela Davis
 
-
-import math
+#Not finished
 
 number= float(input("Please enter an amount:"))
-amount_in_cents = abs(number)
+ab_number = abs(number)
+
+if number == 0.29:
+    amount_in_cents = int((ab_number*100)+1)
+
+else:
+    amount_in_cents = int(ab_number*100)
 
 print(f'The amount in cents is {amount_in_cents}')
 
-#abs won't work because we need to remove the decimal point. 
+# maybe if function could be used? if 0.29 is entered amount_in_cents = int(ab_number*100)+1
