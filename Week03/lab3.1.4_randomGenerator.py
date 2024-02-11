@@ -13,4 +13,4 @@ x = int(input("Enter the lowest number for your range: "))
 y = int(input("Enter the highest number for your range: "))
 
 number = random.randint(x,y)
-print("Your random number between {} and {} is: {}".format (x, y, number))
+print(f"Your random number between {x} and {y} is: {number}")

@@ -9,7 +9,7 @@ import random
 fruits = ('Apple', 'Orange', 'Banana', 'Pear') #() makes this a tuple
 index= random.randint(0, len(fruits)-1)
 fruit = fruits[index]
-print("Here is a random fruit: {}".format(fruit))
+print(f"Here is a random fruit: {fruit}")
 
 # Idea: is there a way of having the user provide the fruits for the tuple? 
 # Test below with a static/predefined lenght of the tuple.
@@ -25,9 +25,9 @@ third_fruit = input("Enter your third fruit for the list: ")
 forth_fruit = input("Enter your forth fruit for the list: ")
 fifth_fruit = input("Enter your fifth fruit for the list: ")
  
-fruits = (first_fruit, second_fruit, third_fruit, forth_fruit, fifth_fruit)
+fruits2 = (first_fruit, second_fruit, third_fruit, forth_fruit, fifth_fruit)
 
-index= random.randint(0, len(fruits)-1)
+index2 = random.randint(0, len(fruits2)-1)
 
-fruit = fruits[index]
-print("Here is a random fruit from your list: {}".format(fruit))
+fruit2 = fruits2[index]
+print(f"Here is a random fruit from your list: {fruit2}")

@@ -1,4 +1,4 @@
-#lab3.1.3_dov.py
+#lab3.1.3_div.py
 #This program reads in two numbers and divides the first one by the second and displays the result as a whole number with
 # the remainder stated.
 #Author: Angela Davis
@@ -14,5 +14,5 @@ remainder = x%y
 # % gives us the remainder. Here we are not specifying if the answer should be an int() or not 
 # however, since x & y are int() the answer will be an int()
 
-print ("{} divided by {} is {} with remainder {}".format ( x, y, answer, remainder))
+print (f"{x} divided by {y} is {answer} with remainder {remainder}")
 

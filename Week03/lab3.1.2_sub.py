@@ -2,10 +2,10 @@
 #This program takes in two numbers from a user and subtracts the first from the second one.
 #Author:Angela Davis
 
-x = str(input("Enter first number: "))
-y = str(input("Enter second number: "))
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
 answer = x-y
-print ("{} minus {} is {} ".format (x, y, answer))
+print (f"{x} minus {y} is {answer} ")
 
 #Extra question: when the program is running, try entering in something that is not an int eg 1.1 or hello
 #Answer: Yes error is thrown because we are telling the program that an integer will be entered so it is not able to handle a string or float number. 

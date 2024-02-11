@@ -5,12 +5,11 @@
 #Expression in lab: 
 # message = 'I have eaten ' + 99 + ' burritos.'
 # print (message)
-# This does not work because you are mixing strings and integers in the same variable
-# without defining what the value entered should be.
+# This does not work because you are mixing strings and integers in the same string. 
+# You need to cast the integer to a string.
 
-# Alternative approach could be
-number = 99 
-print("I have eaten {} burritos.".format (number))
+message = 'I have eaten ' + str(99) + ' burritos.'
+print(message)
 
 #7. Why is eggs a valid variable name while 100 is invalid?
 # A: variables must start with a letter and can't begin with a number. 
