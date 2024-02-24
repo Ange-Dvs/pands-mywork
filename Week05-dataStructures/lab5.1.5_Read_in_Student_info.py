@@ -7,23 +7,20 @@
 #b. Then read in the grade as well
 #This program can just read in one student (and their module details) 
 
-#
-student_name = input('Please enter the student name: ')
 
-# while x != "" or "q": 
+student = {}
+student["name"] = input("Enter student's name: ")
 
 modules = []
+while True:
+    course_name = input("Enter module course name: ")
+    if course_name == "":
+        break
 
-enter_module = input("Please enter your module name: ")
+    module_grade = input("Enter the grade for the module: ")
 
-while enter_module != "":
-    modules.append(enter_module)
-    enter_module = input("Please enter your module name: ")                 
+    modules.append({"course_name":course_name, "grade":module_grade})
 
-student = {
-    "name": student_name,
-    "modules": modules
-}
-print (f'Student: {student["name"]}')
-for course in student["modules"]:
-    print (f'Modules: {course["modules"]}')
+student["modules"] = modules
+
+print(student)
